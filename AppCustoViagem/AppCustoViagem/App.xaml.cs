@@ -8,7 +8,7 @@ namespace AppCustoViagem
 {
     public partial class App : Application
     {
-        List<Pedagio> ArrayPedagios = new List<Pedagio>();
+        public List<Pedagio> ArrayPedagios = new List<Pedagio>();
 
         public App()
         {

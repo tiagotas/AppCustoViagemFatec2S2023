@@ -28,7 +28,16 @@ namespace AppCustoViagem
                 double litros = (distancia / rendimento);
                 double custo = litros * preco_gas;
 
-                DisplayAlert("Valor total:", custo.ToString("C"), "OK");
+                App PropriedadesApp = (App)Application.Current;
+
+                double valor_total =
+                    PropriedadesApp.ArrayPedagios.Sum(i => i.Valor);
+
+                string msg =  $"Sua viagem de {origem} até {destino} ";
+                       msg += $"irá custar {custo} e de pedágios ";
+                       msg += valor_total;
+
+                DisplayAlert("Valor total:", msg, "OK");
 
             } catch (Exception ex)
             {

@@ -2,22 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppCustoViagem.AddPedagio"
-             Title="Add Pedágio">
+             Title="Add Pedágio"
+             Background="#ccc">
     
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Lista de Pedágios" Clicked="ToolbarItem_Clicked" />
     </ContentPage.ToolbarItems>
 
-    <StackLayout>
-
-        <Label Text="Localização do Pedágio:" />
-        <Entry x:Name="txt_localizacao" />
-
-        <Label Text="Valor do Pedágio:" />
-        <Entry x:Name="txt_valor" />
-
-        <Button Text="Adicionar" />
+    <StackLayout VerticalOptions="Center">
+        <Frame Margin="10" CornerRadius="10">
+            <StackLayout>
+                <Label Text="Localização do Pedágio:" />
+                <Entry x:Name="txt_localizacao" />
+                <Label Text="Valor do Pedágio:" />
+                <Entry x:Name="txt_valor" />
+                <Button Text="Adicionar" Clicked="Button_Clicked" />
+            </StackLayout>
+        </Frame>
     </StackLayout>
+
+    
     
    
     
