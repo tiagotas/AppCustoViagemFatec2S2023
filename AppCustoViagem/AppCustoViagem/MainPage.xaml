@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCustoViagem.MainPage"
+             Title="Custo Viagem">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Pedágio" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <Grid ColumnDefinitions="Auto, *"
+          RowDefinitions="Auto, Auto, Auto, Auto, Auto">
+        
+        <Label Grid.Row="0" Grid.Column="0" Text="Origem:" />
+        <Entry Grid.Row="0" Grid.Column="1" x:Name="txt_origem" />
+
+        <Label Grid.Row="1" Grid.Column="0" Text="Destino:" />
+        <Entry Grid.Row="1" Grid.Column="1" x:Name="txt_destino" />
+
+        <Label Grid.Row="2" Grid.Column="0" Text="Distância:" />
+        <Entry Grid.Row="2" Grid.Column="1" x:Name="txt_distancia" />
+
+        <Label Grid.Row="3" Grid.Column="0" Text="Valor Gasosa:" />
+        <Entry Grid.Row="3" Grid.Column="1" x:Name="txt_preco_gas" />
+
+        <Label Grid.Row="4" Grid.Column="0" Text="Rendimento:" />
+        <Entry Grid.Row="4" Grid.Column="1" x:Name="txt_rendimento" />
+
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+                Text="Calcular" Clicked="Button_Clicked" />
+
+    </Grid>
+
+</ContentPage>

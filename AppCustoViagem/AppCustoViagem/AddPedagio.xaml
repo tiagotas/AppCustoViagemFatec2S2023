@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCustoViagem.AddPedagio"
+             Title="Add Pedágio">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Lista de Pedágios" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+
+        <Label Text="Localização do Pedágio:" />
+        <Entry x:Name="txt_localizacao" />
+
+        <Label Text="Valor do Pedágio:" />
+        <Entry x:Name="txt_valor" />
+
+        <Button Text="Adicionar" />
+    </StackLayout>
+    
+   
+    
+</ContentPage>
